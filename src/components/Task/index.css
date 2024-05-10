@@ -1,0 +1,97 @@
+.task {
+  width: calc(33.33% - 20px);
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.appointment-item {
+  list-style-type: none;
+  border: 1px solid #b5b7c4;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .appointment-item {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 32px;
+    min-width: 297px;
+  }
+}
+.task:hover {
+  transform: translateY(-5px);
+}
+
+.task h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.task p {
+  margin: 10px 0;
+  color: #666;
+}
+
+/*.task button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: blue;
+  color: #fff;
+  border: 1px solid #e8d5d4;
+  border-radius: 5px;
+  cursor: pointer;
+}
+*/
+.task button {
+  align-self: flex-start;
+  background-color: #8b5cf6;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  outline: none;
+}
+
+.task button:hover {
+  background-color: #cca7a7;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .task {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .task {
+    width: 100%;
+  }
+}
+.task-form-input {
+  margin: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+.checkbox-container {
+  text-align: right;
+}
+.completed-box {
+  height: 25px;
+  width: 25px;
+}
